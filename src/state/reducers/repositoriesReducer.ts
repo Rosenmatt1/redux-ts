@@ -7,15 +7,6 @@ interface RepositoriesState {
   data: string[];
 }
 
-// } catch (err) {
-//   if (err instanceof Error) {
-//     dispatch({
-//       type: ActionType.SEARCH_REPOSITORIES_ERROR,
-//       payload: err.message,
-//     });
-//   }
-// }
-
 const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
   switch (action.type) {
     case ActionType.SEARCH_REPOSITORIES:
